@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "Shweta Das <shwetadas135gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/baymac/catwomaniya-blog/issues"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.0",
@@ -44,7 +44,7 @@
   "devDependencies": {
     "prettier": "2.0.5"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/baymac/catwomaniya-blog#readme",
   "keywords": [
     "gatsby"
   ],
@@ -52,7 +52,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/baymac/catwomaniya-blog"
   },
   "scripts": {
     "build": "gatsby build",
