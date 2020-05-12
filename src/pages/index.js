@@ -2,15 +2,17 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import Image from "../components/images/portrait"
 import SEO from "../components/seo"
 import styled from 'styled-components'
-import Balloon from "../components/balloon"
-import Balloon2 from "../components/balloon2"
-import Balloon3 from "../components/balloon3"
-import Balloon4 from "../components/balloon4"
-import Balloon5 from "../components/balloon5"
-import Pancake from "../components/pancake"
+import Balloon from "../components/images/balloon"
+import Balloon2 from "../components/images/balloon2"
+import Balloon3 from "../components/images/balloon3"
+import Balloon4 from "../components/images/balloon4"
+import Balloon5 from "../components/images/balloon5"
+import Pancake from "../components/images/pancake"
+import './index.css'
+import Portrait from "../components/images/portrait"
 
 export const Wrapper = styled.div`
 display: flex;
@@ -105,7 +107,7 @@ const IndexPage = () => (
     <Wrapper className='root'>
       <ImageWrapper className="fluidContainer">
         <a href='javascript:;'>
-          <Image className="landingImage" />
+          <Portrait className="landingImage" />
         </a>
       </ImageWrapper>
       <BirthdayWrapper className="bdayWrapper">
