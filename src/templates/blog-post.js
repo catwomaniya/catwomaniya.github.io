@@ -1,10 +1,16 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
+import styled from 'styled-components'
 import Bio from "../components/bio"
-import Layout from "../components/blogLayout"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+
+const StyledLink = styled(Link)`
+cursor: pointer;
+text-decoration: none;
+box-shadow: none;
+`
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -12,16 +18,17 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
       <article>
+        <StyledLink to="/blog"><span role="img" aria-label="right">👈&nbsp;</span>Go back to the blog</StyledLink>
         <header>
           <h1
             style={{
-              marginTop: rhythm(1),
+              // marginTop: rhythm(1),
               marginBottom: 0,
             }}
           >

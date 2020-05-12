@@ -1,8 +1,10 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from 'styled-components'
+import './header.css'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, path }) => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -17,13 +19,7 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
+        <Link to={(path) ? path : "/"} className="header">
           {siteTitle}
         </Link>
       </h1>
@@ -33,6 +29,7 @@ const Header = ({ siteTitle }) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  path: PropTypes.string
 }
 
 Header.defaultProps = {

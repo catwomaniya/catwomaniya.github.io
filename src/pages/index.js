@@ -10,6 +10,13 @@ import Balloon2 from "../components/balloon2"
 import Balloon3 from "../components/balloon3"
 import Balloon4 from "../components/balloon4"
 import Balloon5 from "../components/balloon5"
+import './index.css'
+import Pancake from "../components/pancake"
+import BulbBlue from "../components/bulb_blue"
+import BulbGreen from "../components/bulb_green"
+import BulbPink from "../components/bulb_pink"
+import BulbOrange from "../components/bulb_orange"
+import BulbRed from "../components/bulb_red"
 
 export const Wrapper = styled.div`
 display: flex;
@@ -18,19 +25,22 @@ justify-content: space-between;
 width: 100%;
 flex-wrap: nowrap;
 flex: 1;
+position: relative;
 `
 
 const StyledLink = styled(Link)`
 display: flex;
+flex-direction: column;
 justify-content: center;
 cursor: pointer;
 width: 300px;
-height: 100px;
+height: 200px;
 background-color: rebeccapurple;
 color: white;
 align-items: center;
 text-decoration: none;
 font-size: 50px;
+font-family:    Arial, Helvetica, sans-serif;
 `
 
 const ImageWrapper = styled.div`
@@ -44,10 +54,12 @@ const BalloonImageWrapper = styled.div`
 const BirthdayWrapper = styled.div`
 display: flex;
 flex-direction: column;
-justify-content: space-evenly;
+justify-content: center;
 align-items: center;
-height: 828px;
-flex: 1;
+height: 100%;
+position: absolute;
+right: 0;
+top: 0;
 `
 
 const BalloonWrapper = styled.div`
@@ -62,7 +74,7 @@ flex: 1;
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Wrapper className='imageWrapper'>
+    <Wrapper>
       <div>
         <h1>Hi people</h1>
         <p>Welcome to my personal blog.</p>
@@ -96,21 +108,24 @@ const IndexPage = () => (
         </BalloonImageWrapper>
       </BalloonWrapper>
     </Wrapper>
-    <Wrapper className='imageWrapper'>
+    <Wrapper className='root'>
       <ImageWrapper className="fluidContainer">
         <a href='javascript:;'>
           <Image className="landingImage" />
         </a>
       </ImageWrapper>
-      <BirthdayWrapper>
+      <BirthdayWrapper className="bdayWrapper">
+        <ImageWrapper className="packageContainer">
+          <a href='javascript:;'>
+            <Pancake />
+          </a>
+        </ImageWrapper>
         <StyledLink to="/blog/" className="blogLink">
           {/* Head over to my blog &nbsp;<span role="img" aria-label="right">👉</span> */}
-          HAPPY&nbsp;<span role="img" aria-label="right">👉</span>
+          <p>HAPPY</p><p>BIRTHDAY</p><span role="img" aria-label="right">L&lt;3VE 👉</span>
         </StyledLink>
       </BirthdayWrapper>
     </Wrapper>
-
-
   </Layout>
 )
 

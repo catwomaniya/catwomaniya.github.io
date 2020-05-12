@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Catwomaniya Blog`,
+    title: `Catwomaniya`,
     author: {
       name: `Shweta Das`,
-      summary: `I love cats.`,
+      summary: `while petting her cats`,
     },
     description: `My personal blog`,
     siteUrl: `https://catwomaniya.surge.sh`,
