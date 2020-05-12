@@ -10,13 +10,7 @@ import Balloon2 from "../components/balloon2"
 import Balloon3 from "../components/balloon3"
 import Balloon4 from "../components/balloon4"
 import Balloon5 from "../components/balloon5"
-import './index.css'
 import Pancake from "../components/pancake"
-import BulbBlue from "../components/bulb_blue"
-import BulbGreen from "../components/bulb_green"
-import BulbPink from "../components/bulb_pink"
-import BulbOrange from "../components/bulb_orange"
-import BulbRed from "../components/bulb_red"
 
 export const Wrapper = styled.div`
 display: flex;
@@ -83,27 +77,27 @@ const IndexPage = () => (
       <BalloonWrapper>
         <BalloonImageWrapper>
           <a href='javascript:;'>
-            <Balloon className="landingImage" />
+            <Balloon />
           </a>
         </BalloonImageWrapper>
         <BalloonImageWrapper >
           <a href='javascript:;'>
-            <Balloon2 className="landingImage" />
+            <Balloon2 />
           </a>
         </BalloonImageWrapper>
         <BalloonImageWrapper >
           <a href='javascript:;'>
-            <Balloon3 className="landingImage" />
+            <Balloon3 />
           </a>
         </BalloonImageWrapper>
         <BalloonImageWrapper >
           <a href='javascript:;'>
-            <Balloon4 className="landingImage" />
+            <Balloon4 />
           </a>
         </BalloonImageWrapper>
         <BalloonImageWrapper >
           <a href='javascript:;'>
-            <Balloon5 className="landingImage" />
+            <Balloon5 />
           </a>
         </BalloonImageWrapper>
       </BalloonWrapper>
@@ -121,7 +115,6 @@ const IndexPage = () => (
           </a>
         </ImageWrapper>
         <StyledLink to="/blog/" className="blogLink">
-          {/* Head over to my blog &nbsp;<span role="img" aria-label="right">👉</span> */}
           <p>HAPPY</p><p>BIRTHDAY</p><span role="img" aria-label="right">L&lt;3VE 👉</span>
         </StyledLink>
       </BirthdayWrapper>
