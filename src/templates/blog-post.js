@@ -1,5 +1,5 @@
+import { graphql, Link } from "gatsby"
 import React from "react"
-import { Link, graphql } from "gatsby"
 import styled from 'styled-components'
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -24,7 +24,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article>
-        <StyledLink to="/blog"><span role="img" aria-label="right">👈&nbsp;</span>Go back to the blog</StyledLink>
+        <StyledLink to="/"><span role="img" aria-label="right">👈&nbsp;</span>Go back to the blog</StyledLink>
         <header>
           <h1
             style={{

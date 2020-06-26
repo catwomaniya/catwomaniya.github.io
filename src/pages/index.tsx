@@ -11,7 +11,7 @@ import BulbGreen from "../components/images/bulb_green"
 import BulbPink from "../components/images/bulb_pink"
 import BulbOrange from "../components/images/bulb_orange"
 import BulbRed from "../components/images/bulb_red"
-import './blog.css'
+import './index.css'
 
 type Data = {
   site: {
@@ -43,35 +43,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   return (
     <Layout>
       <SEO title="All posts" />
-      <div className="div1">
-        <div className="div2">
-          <div className="div3">
-            <a href='javascript:;'>
-              <BulbBlue />
-            </a>
-          </div>
-          <div className="div3" >
-            <a href='javascript:;'>
-              <BulbGreen />
-            </a>
-          </div>
-          <div className="div3">
-            <a href='javascript:;'>
-              <BulbPink />
-            </a>
-          </div>
-          <div className="div3" >
-            <a href='javascript:;'>
-              <BulbOrange />
-            </a>
-          </div>
-          <div className="div3" >
-            <a href='javascript:;'>
-              <BulbRed />
-            </a>
-          </div>
-        </div>
-      </div>
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
