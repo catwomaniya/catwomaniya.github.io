@@ -65,9 +65,9 @@ const BlogIndex = ({ data }: PageProps<Data>) => {
           </article>
         )
       })}
-      <aside>
+      {/* <aside>
         <Signup />
-      </aside>
+      </aside> */}
     </Layout>
   )
 }
