@@ -1,17 +1,12 @@
 // Gatsby supports TypeScript natively!
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import BulbBlue from "../components/images/bulb_blue"
-import BulbGreen from "../components/images/bulb_green"
-import BulbPink from "../components/images/bulb_pink"
-import BulbOrange from "../components/images/bulb_orange"
-import BulbRed from "../components/images/bulb_red"
 import './index.css'
+import Signup from "../components/signup"
 
 type Data = {
   site: {
@@ -36,7 +31,7 @@ type Data = {
   }
 }
 
-const BlogIndex = ({ data, location }: PageProps<Data>) => {
+const BlogIndex = ({ data }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
@@ -70,6 +65,9 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           </article>
         )
       })}
+      <aside>
+        <Signup />
+      </aside>
     </Layout>
   )
 }

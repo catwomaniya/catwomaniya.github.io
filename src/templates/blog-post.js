@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Signup from "../components/signup"
 import { rhythm, scale } from "../utils/typography"
 
 const StyledLink = styled(Link)`
@@ -52,6 +53,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         />
         <footer>
           <Bio />
+          <Signup />
         </footer>
       </article>
 
